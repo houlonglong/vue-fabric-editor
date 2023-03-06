@@ -1,11 +1,32 @@
+<script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router'
+</script>
+
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+  <RouterView />
 </template>
 
 <style lang="less">
-svg{
-  vertical-align: text-top;
+ul,
+li {
+  list-style: none;
+}
+svg {
+  vertical-align: middle;
+}
+.vue-waterfall-easy-scroll {
+  overflow: inherit !important;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.2);
+}
+*::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.1);
 }
 </style>
